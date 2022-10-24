@@ -189,10 +189,7 @@ figcaption {
     --bg-content: #f9f9f9;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        background-color: lightblue;
-    }
+@media screen and (max-width: 900px) {
 
     main {
         margin: auto;
