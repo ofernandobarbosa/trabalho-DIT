@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+    <title>Início</title>
+</head>
+
+<body>
+    <!-- ============== Header e Menu ============== -->
+    <header>
+        <img id="logo" src="../assets/favicon.png" alt="">
+        <nav>
+            <ul class="menu">
+                <li>
+                    <div><a href="./index.html">Início</a></div>
+                </li>
+                <li class="drop"><a href="#">Ambientes</a>
+                    <ul class="drop-content">
+                        <li><a href="./cultura-maker.html">Cultura maker</a></li>
+                        <li><a href="./espaco-maker.html">Espaço maker</a></li>
+                        <li><a href="./hub-projetos.html">HUB de projetos</a></li>
+                    </ul>
+                </li>
+                <li class="drop"><a href="#">Projetos</a>
+                    <ul class="drop-content">
+                        <li><a href="./tecno-maker.html">Tecno Maker</a></li>
+                        <li><a href="./programacao-scratch.html">Programação com Scratch</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div><a href="./galeria.html">Galeria</a></div>
+                </li>
+                <li>
+                    <div class="selected"><a href="./contato.html">Contato</a></div>
+                </li>
+                <li>
+                    <div><a href="./videos.html">Vídeos</a></div>
+                </li>
+                <li>
+                    <div><a href="./agenda.html">Agenda</a></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ============== Conteúdo Principal -->
+    <main>
+        <h2>Contato</h2>
+        <div id="form-contato">
+            <form>
+                <fieldset>
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" placeholder="Fulano Beltrano Ciclano">
+                    </div>
+                    <div>
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+55 (53) 9 9999-9999">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="email@email.com.br">
+                    </div>
+                    <div>
+                        <label for="date">Data nascimento:</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        Sexo:
+                        <div>
+                            <input type="radio" name="sex" id="masculino" value="masculino">
+                            <label>Masculino</label>
+                            <input type="radio" name="sex" id="feminino" value="feminino">
+                            <label>Feminino</label>
+                            <input type="radio" name="sex" id="nao-informado" value="não informado">
+                            <label>Prefiro não informar</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="message">Mensagem:</label>
+                        <textarea name="message" id="message" rows="10" cols="65"></textarea>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+
+
+    <!-- ============== Footer ============== -->
+    <footer>
+        <ul>
+            <li><span>Contato</span>
+                <ul>
+                    <li>📩: <a href="mailto:citec@gmail.com">citec@gmail.com</a></li>
+                    <li>☎️: <a href="tel:53999999999">(53) 9 9999-9999</a></li>
+                </ul>
+            </li>
+            <li><span>Redes Sociais</span>
+                <ul>
+                    <li><a class="image-link" href="http://instragram.com/citec" target="_blank"
+                            rel="noopener noreferrer"><img src="../assets/icons8-instagram-48.png"
+                                alt="ícone do instagram"></a></li>
+                    <li><a class="image-link" href="http://facebook.com/citec" target="_blank"
+                            rel="noopener noreferrer"><img src="../assets/icons8-facebook-novo-48.png"
+                                alt="ícone do Facebook"></a></li>
+                </ul>
+            </li>
+            <li><span>Endereço</span>
+                <ul>
+                    <li>Rua Engenheiro Alfredo Huch, 475 | Bairro Centro | CEP: 96201-460 </li>
+                </ul>
+            </li>
+        </ul>
+
+    </footer>
+</body>
+
+</html>
