@@ -58,3 +58,60 @@ e correção do código.
  O site e os códigos fontes devem ser disponibilizados, no github.
 Os alunos devem enviar no SIGAA o endereço do repositório e
 oendereço na Internet
+
+
+Em telas pequenas, parte do menu fica fora da tela (responsividade)
+
+Caros alunos,
+O trabalho – Site Bootstrap - consiste em transformar o site feito com CSS
+em um site que utiliza bootstrap, tem algumas animações e cuidados com
+performance.
+O site pode ter o seu visual/apresentação alterado porém todo conteúdo
+deve ser mantido. Ou seja, toda a informação que você tinha no site css
+terá que ter no novo site. Por isso tabelas, imagens, listas, forms e vídeos do
+css devem aparecer no site bootstrap(o visual destes itens pode ser
+alterado). Se você não colocou algum item pedido no site css deve coloca-lo
+no site bootstrap. Novas informações podem ser acrescentadas.
+O site deve:
+
+• Arrumar eventuais problemas citados no trabalho anterior
+
+• Adicionar uma página a mais com uma animação css. A animação
+deve ter no mínimo 4s. Esta página a mais deve aparecer no menu
+como as demais páginas. Ela também deve manter o padrão das
+demais
+
+• Em todas as páginas acrescentar uma pequena animação CSS (não
+conta as animações do bootstrap).
+
+• Utilizar algumas estruturas do bootstrap (Menu, alert, carrossel...a
+sua escolha)
+
+• Tabelas, imagens, listas, forms e campos de forms devem utilizar
+classes bootstrap. Estes itens não devem perder a sua estruturação
+(por exemplo, a tabela deve manter o thead, tfoot, tbody, etc)
+
+• O site deve ser responsivo. Utilizar o grid, flexbox ou grid/flexbox do
+bootstrap (livre escolha). Lembrar que celulares não tem o hover.
+
+• O site deve continuar sendo um html padrão com as tags semânticas
+(header, nav, footer, etc). Todas páginas html e css devem passar
+sem erros pelo validador da w3c.
+
+• Manter a estrutura de diretórios com arquivos html, css e imagens
+separados.
+
+• O site deve definir e utilizar variáveis CSS
+
+• Quanto a performance o site final deve
+
+◦ Otimizar as imagens
+
+◦ Definir previamente o tamanho das imagens
+
+◦ Utilizar cdn para o bootstrap
+
+◦ Utilizar arquivos css externos
+
+◦ Outras medidas de performance são bem vindas,...preload, etc
+(exceto a minificação que dificultaria a correção)

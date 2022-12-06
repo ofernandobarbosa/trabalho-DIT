@@ -6,48 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
     <title>Início</title>
 </head>
 
 <body>
     <!-- ============== Header e Menu ============== -->
-    <header>
-        <a href="index.html" id="link-logo">
+
+    <header class="d-flex flex-wrap justify-content-between align-items-center pl-4 pr-4">
+        <a class="d-flex align-items-center text-dark text-decoration-none" href="./index.html" id="link-logo">
             <img id="logo" src="./assets/favicon.png" alt="">
         </a>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <div class="selected"><a href="index.html">Início</a></div>
-                </li>
-                <li class="drop"><a href="#">Ambientes</a>
-                    <ul class="drop-content">
-                        <li><a href="./web/cultura-maker.html">Cultura maker</a></li>
-                        <li><a href="./web/espaco-maker.html">Espaço maker</a></li>
-                        <li><a href="./web/hub-projetos.html">HUB de projetos</a></li>
-                    </ul>
-                </li>
-                <li class="drop"><a href="#">Projetos</a>
-                    <ul class="drop-content">
-                        <li><a href="./web/tecno-maker.html">Tecno Maker</a></li>
-                        <li><a href="./web/programacao-scratch.html">Programação com Scratch</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <div><a href="./web/galeria.html">Galeria</a></div>
-                </li>
-                <li>
-                    <div><a href="./web/contato.html">Contato</a></div>
-                </li>
-                <li>
-                    <div><a href="./web/videos.html">Vídeos</a></div>
-                </li>
-                <li>
-                    <div><a href="./web/agenda.html">Agenda</a></div>
-                </li>
-            </ul>
-        </nav>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link p-0 selected" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-0 " href="./web/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-0 " href="./web/contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-0 " href="./web/videos.html">Vídeos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link p-0 " href="./web/agenda.html">Agenda</a>
+            </li>
+        </ul>
+    </header>
     </header>
     <!-- ============== Conteúdo Principal -->
     <main>
@@ -68,7 +57,7 @@
         <section id="equipamentos">
             <h2>Principais Equipamentos</h2>
             <!-- ============== cards equipamentos ============== -->
-            <div class="cards">
+            <div class="cards-body">
                 <div class="card">
                     <h3>Impressoras 3D</h3>
                     <figure>
@@ -138,11 +127,9 @@
         </section>
 
     </main>
-
-
     <!-- ============== Footer ============== -->
-    <footer>
-        <ul>
+    <footer class="d-flex align-content-center text-center p-4">
+        <ul class="d-flex flex-wrap content">
             <li><span>Contato</span>
                 <ul>
                     <li>📩: <a href="mailto:citec@gmail.com">citec@gmail.com</a></li>
@@ -150,7 +137,7 @@
                 </ul>
             </li>
             <li><span>Redes Sociais</span>
-                <ul>
+                <ul class="d-flex justify-content-center">
                     <li><a class="image-link" href="http://instragram.com/citec" target="_blank"
                             rel="noopener noreferrer"><img src="./assets/icons8-instagram-48.png"
                                 alt="ícone do instagram"></a></li>

@@ -189,26 +189,39 @@ figcaption {
     --bg-content: #f9f9f9;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 
+    .nav{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
     main {
         margin: auto;
         min-width: 95%;
         min-height: 100vh;
     }
+    #banner{
+        min-height: 100% !important;
 
-    .cards {
+    }
+    #sobre {
+        width: 100%;
+        height: 100% !important;
+    }
+
+    .card {
+        display: block;
+        min-width: 90% !important;
+    }
+
+    .cards-body {
         display: flex;
         overflow: scroll;
         justify-content: start !important;
         flex-wrap: nowrap !important;
-        width: 100%;
+        gap: 10px;
     }
-
-    header nav {
-        overflow: hidden;
-    }
-
 
     footer {
         padding-top: 20px;
@@ -218,43 +231,38 @@ figcaption {
         overflow: hidden;
     }
 
-    footer ul {
-        display: block !important;
+    footer ul.content {
         text-align: center;
         padding: 20px;
-
+        gap: 20px!important;
     }
 
-    #sobre {
-        width: 100%;
-    }
 }
 
 /* ============== Header e Menu ==============*/
 
 header {
-    display: flex;
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--bg-footer);
+}
+
+.nav {
+    gap: 40px;
+}
+
+.nav li a {
     color: var(--negative-text);
-    padding: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+}
+
+.nav :hover{
+    color: #ec1c24;
 }
 
 #logo {
     width: 80px;
     height: auto;
     box-shadow: 1px white;
-}
-
-.menu {
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    color: var(--negative-text);
 }
 
 .drop {
@@ -342,7 +350,7 @@ figure img {
 
 /* Cards */
 
-.cards {
+.cards-body {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -381,6 +389,7 @@ figure img {
 /* Galeria de fotos */
 .gallery {
     display: flex;
+    margin-bottom: 50px;
 }
 
 .gallery figure {
@@ -540,7 +549,7 @@ td {
 /* ============== Footer ============== */
 
 footer {
-    height: 200px;
+    height: 100%;
     width: 100%;
     background: var(--bg-footer);
     color: var(--negative-text);
@@ -552,7 +561,7 @@ footer {
 }
 
 
-footer ul {
+footer ul.content {
     display: flex;
     justify-content: center;
     gap: 50px;
