@@ -5,18 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="../css/style.css" as="style">
+  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" as="style">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" type="text/css"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
-  <title>Início</title>
+  <title>Agenda</title>
 </head>
 
 <body>
   <!-- ============== Header e Menu ============== -->
   <header class="d-flex flex-wrap justify-content-between align-items-center pl-4 pr-4">
     <a class="d-flex align-items-center text-dark text-decoration-none" href="./index.html" id="link-logo">
-      <img id="logo" src="../assets/favicon.png" alt="">
+      <img id="logo" src="../assets/logo.png" alt="">
     </a>
     <ul class="nav">
       <li class="nav-item">
@@ -34,136 +36,140 @@
       <li class="nav-item">
         <a class="nav-link p-0 selected" aria-current="page" href="./agenda.html">Agenda</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link p-0 " href="./animacao.html">Animação</a>
+      </li>
     </ul>
   </header>
   <!-- ============== Conteúdo Principal -->
   <main>
     <h2>Agenda</h2>
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th>
-            <span class="day">1</span>
-            <span class="long">Segunda</span>
-            <span class="short">Seg</span>
-          </th>
-          <th>
-            <span class="day">2</span>
-            <span class="long">Terça</span>
-            <span class="short">Ter</span>
-          </th>
-          <th>
-            <span class="day">3</span>
-            <span class="long">Quarta</span>
-            <span class="short">Qua</span>
-          </th>
-          <th>
-            <span class="day">4</span>
-            <span class="long">Quinta</span>
-            <span class="short">Qui</span>
-          </th>
-          <th>
-            <span class="day active">5</span>
-            <span class="long">Sexta</span>
-            <span class="short">Sex</span>
-          </th>
-          <th>
-            <span class="day">6</span>
-            <span class="long">Sábado</span>
-            <span class="short">Sáb</span>
-          </th>
-          <th>
-            <span class="day">7</span>
-            <span class="long">Domingo</span>
-            <span class="short">Dom</span>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="hour" rowspan="1"><span>1:00</span></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="hour" rowspan="1"><span>2:00</span></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="hour" rowspan="1"><span>3:00</span></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="hour" rowspan="1"><span>4:00</span></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="hour" rowspan="1"><span>5:00</span></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="hour" rowspan="1"><span>6:00</span></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="hour" rowspan="1"><span>7:00</span></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="hour" rowspan="1"><span>8:00</span></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-
+    <div class="table-responsive-sm">
+      <table class="table table-bordered table-dark ">
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">
+              <span class="day">1</span>
+              <span class="long">Segunda</span>
+              <span class="short">Seg</span>
+            </th>
+            <th scope="col">
+              <span class="day">2</span>
+              <span class="long">Terça</span>
+              <span class="short">Ter</span>
+            </th>
+            <th scope="col">
+              <span class="day">3</span>
+              <span class="long">Quarta</span>
+              <span class="short">Qua</span>
+            </th>
+            <th scope="col">
+              <span class="day">4</span>
+              <span class="long">Quinta</span>
+              <span class="short">Qui</span>
+            </th>
+            <th scope="col">
+              <span class="day active">5</span>
+              <span class="long">Sexta</span>
+              <span class="short">Sex</span>
+            </th>
+            <th scope="col">
+              <span class="day">6</span>
+              <span class="long">Sábado</span>
+              <span class="short">Sáb</span>
+            </th>
+            <th scope="col">
+              <span class="day">7</span>
+              <span class="long">Domingo</span>
+              <span class="short">Dom</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="hour" rowspan="1"><span>1:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="1"><span>2:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="1"><span>3:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="1"><span>4:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="1"><span>5:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="1"><span>6:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="1"><span>7:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="1"><span>8:00</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
   </main>
 
@@ -171,28 +177,30 @@
   <!-- ============== Footer ============== -->
   <footer class="d-flex align-content-center text-center p-4">
     <ul class="d-flex flex-wrap content">
-      <li><span>Contato</span>
-        <ul>
-          <li>📩: <a href="mailto:citec@gmail.com">citec@gmail.com</a></li>
-          <li>☎️: <a href="tel:53999999999">(53) 9 9999-9999</a></li>
-        </ul>
-      </li>
-      <li><span>Redes Sociais</span>
-        <ul class="d-flex justify-content-center">
-          <li><a class="image-link" href="http://instragram.com/citec" target="_blank" rel="noopener noreferrer"><img
-                src="../assets/icons8-instagram-48.png" alt="ícone do instagram"></a></li>
-          <li><a class="image-link" href="http://facebook.com/citec" target="_blank" rel="noopener noreferrer"><img
-                src="../assets/icons8-facebook-novo-48.png" alt="ícone do Facebook"></a></li>
-        </ul>
-      </li>
-      <li><span>Endereço</span>
-        <ul>
-          <li>Rua Engenheiro Alfredo Huch, 475 | Bairro Centro | CEP: 96201-460 </li>
-        </ul>
-      </li>
+        <li><span>Contato</span>
+            <ul>
+                <li>📩: <a href="mailto:citec@gmail.com">citec@gmail.com</a></li>
+                <li>☎️: <a href="tel:53999999999">(53) 9 9999-9999</a></li>
+            </ul>
+        </li>
+        <li><span>Redes Sociais</span>
+            <ul class="d-flex justify-content-center">
+                <li><a class="image-link" href="http://instragram.com/citec" target="_blank"
+                        rel="noopener noreferrer"><img src="../assets/icons8-instagram-32.png"
+                            alt="ícone do instagram"></a></li>
+                <li><a class="image-link" href="http://facebook.com/citec" target="_blank"
+                        rel="noopener noreferrer"><img src="../assets/icons8-facebook-novo-32.png"
+                            alt="ícone do Facebook"></a></li>
+            </ul>
+        </li>
+        <li><span>Endereço</span>
+            <ul>
+                <li>Rua Engenheiro Alfredo Huch, 475 | Bairro Centro | CEP: 96201-460 </li>
+            </ul>
+        </li>
     </ul>
 
-  </footer>
+</footer>
 </body>
 
 </html>

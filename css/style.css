@@ -159,9 +159,9 @@ nav a:hover {
 h2 {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    word-wrap: break-word;
+    margin-top: 50px !important;
+    margin-bottom: 40px !important;
+    word-wrap: break-word !important;
 }
 
 h3 {
@@ -192,21 +192,30 @@ figcaption {
 
 @media screen and (max-width: 768px) {
 
-    .nav{
+    h2 {
+        margin-top: 50px !important;
+        margin-bottom: 40px !important;
+        word-wrap: break-word !important;
+    }
+
+    .nav {
         display: flex;
         justify-content: center;
         padding-bottom: 15px;
     }
+
     main {
         margin: auto;
         min-width: 95%;
         min-height: 100vh;
     }
-    #banner{
+
+    #banner {
         min-width: 100%;
         max-width: 30%;
 
     }
+
     #sobre {
         width: 100%;
         height: 100% !important;
@@ -215,11 +224,11 @@ figcaption {
 
     .card {
         display: block;
-        min-width: 250px!important;
+        min-width: 250px !important;
     }
 
-    .card figure img{
-        width: 100%!important;
+    .card figure img {
+        width: 100% !important;
     }
 
     .cards-body {
@@ -228,6 +237,29 @@ figcaption {
         justify-content: start !important;
         flex-wrap: nowrap !important;
         gap: 10px;
+    }
+
+    #form-contato {
+        margin: 20px !important;
+    }
+
+    #section-contato {
+        margin: 0 !important;
+    }
+
+    .buttons {
+        flex-direction: column !important;
+    }
+
+    .container-button {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    div button {
+        height: 60px !important;
+        width: 150px !important;
+        font-size: 1.5rem !important;
     }
 
     footer {
@@ -241,7 +273,7 @@ figcaption {
     footer ul.content {
         text-align: center;
         padding: 20px;
-        gap: 20px!important;
+        gap: 20px !important;
     }
 
 }
@@ -262,7 +294,7 @@ header {
     font-weight: bold;
 }
 
-.nav :hover{
+.nav :hover {
     color: #ec1c24;
     transition: 1s;
     transform: scale(1.1);
@@ -331,7 +363,7 @@ header {
 /* Início */
 main {
     margin: auto;
-    width: 65%;
+    width: 80%;
     min-height: 100vh;
     color: var(--normal-text);
     font-size: var(--normal-font-size);
@@ -341,8 +373,8 @@ main {
 #banner {
     display: flex;
     margin: auto;
-    min-width: 50%; 
-} 
+    min-width: 50%;
+}
 
 
 #sobre {
@@ -427,49 +459,33 @@ main {
 
 /* Página de Contato */
 
+form {
+    border-radius: 50px;
+}
+
 #form-contato {
-    padding: 15px;
-    border-radius: 5px;
-    background-color: var(--bg-content);
+    margin: 32px;
 }
 
-#form-contato div {
+#section-contato {
+    margin: 32px;
+}
+
+.buttons {
+    min-width: 50px;
     display: flex;
-    gap: 10px;
-    padding: 5px;
-    align-items: center;
+    flex-direction: row;
 }
 
-#form-contato div input {
-    width: 100%;
-    height: 20px;
-    background-color: var(--bg-content);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    text-align: center;
-}
-
-#form-contato div textarea {
-    width: 100%;
-    height: 300px;
-    border-radius: 5px;
-}
-
-#form-contato div {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-#form-contato .buttons {
+div button {
     padding: 20px;
     display: flex;
     justify-content: center;
 }
 
-#form-contato button {
+div button {
+    display: flex;
+    align-items: center;
     border-radius: 10px;
     border: 0;
     background-color: #1B9D46;
@@ -477,7 +493,8 @@ main {
     font-weight: bold;
     color: var(--negative-text);
     height: 40px;
-    width: 100%;
+    width: 100px;
+    margin: 10px;
 }
 
 /* Página de Vídeos */
@@ -598,4 +615,60 @@ footer img {
 
 .image-link {
     background-color: var(--bg-footer) !important;
+}
+
+/* Página de Animação */
+
+.caixa {
+    width: 60%;
+}
+
+.container-box{
+    display: flex;
+    justify-content: center;
+
+}
+
+.anime {
+    width: 65px;
+    height: 65px;
+    background-color: red;
+    position: relative;
+
+    animation-name: key-anime;
+    animation-duration: 4s; 
+    animation-iteration-count: infinite;  
+    animation-direction: alternate; 
+    animation-timing-function:ease-in-out; 
+
+}
+
+@keyframes key-anime {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 100% -65px;
+        top: 0px;
+    }
+
+    50% {
+        left: 100%;
+        top: 200px;
+    }
+
+    75% {
+        left: 0px;
+        top: 200px -65px;
+    }
+
+    100% {
+        border-radius: 50%;
+        left: 0px;
+        top: 0px;
+    }
 }

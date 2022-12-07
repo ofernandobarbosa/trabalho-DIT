@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
-    <title>Início</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preload" href="../css/style.css" as="style">
+        <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" as="style">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+        <title>Agenda</title>
+      </head>
 
 <body>
     <!-- ============== Header e Menu ============== -->
     <header class="d-flex flex-wrap justify-content-between align-items-center pl-4 pr-4">
         <a class="d-flex align-items-center text-dark text-decoration-none" href="./index.html" id="link-logo">
-            <img id="logo" src="../assets/favicon.png" alt="">
+            <img id="logo" src="../assets/logo.png" alt="">
         </a>
         <ul class="nav">
             <li class="nav-item">
@@ -40,49 +43,79 @@
     </header>
     <!-- ============== Conteúdo Principal -->
     <main>
-        <h2>Contato</h2>
-        <div id="form-contato">
-            <form>
-                <fieldset>
-                    <div>
-                        <label for="name">Nome:</label>
-                        <input type="text" name="name" id="name" placeholder="Fulano Beltrano Ciclano">
+        <section id="section-contato">
+
+            <h2>Contato</h2>
+
+            <form id="form-contato" class="
+             border-dark border p-5
+              ">
+                <div class="form-group row">
+                    <label for="name" class="col-sm-2 col-form-label">Nome:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" placeholder="Fulano Beltrano Ciclano">
                     </div>
-                    <div>
-                        <label for="phone">Telefone:</label>
-                        <input type="tel" name="phone" id="phone" placeholder="+55 (53) 9 9999-9999">
+                </div>
+                <div class="form-group row">
+                    <label for="phone" class="col-sm-2 col-form-label">Telefone:</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" id="phone" placeholder="+55 (53) 9 9999-9999">
                     </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="email@email.com.br">
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="email@email.com.br">
                     </div>
-                    <div>
-                        <label for="date">Data nascimento:</label>
-                        <input type="date" name="date" id="date">
+                </div>
+                <div class="form-group row">
+                    <label for="date" class="col-sm-2 col-form-label">Data nascimento:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="date" placeholder="email@email.com.br">
                     </div>
-                    <div>
-                        Sexo:
-                        <div>
-                            <input type="radio" name="sex" id="masculino" value="masculino">
-                            <label>Masculino</label>
-                            <input type="radio" name="sex" id="feminino" value="feminino">
-                            <label>Feminino</label>
-                            <input type="radio" name="sex" id="nao-informado" value="não informado">
-                            <label>Prefiro não informar</label>
+                </div>
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sex" id="gridRadios1"
+                                    value="masculino" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Masculino
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sex" id="gridRadios1"
+                                    value="feminino" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Feminino
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="sex" id="gridRadios1"
+                                    value="nao-informado" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Prefiro não informar
+                                </label>
+                            </div>
                         </div>
                     </div>
+                </fieldset>
 
-                    <div>
-                        <label for="message">Mensagem:</label>
-                        <textarea name="message" id="message" rows="10" cols="65"></textarea>
-                    </div>
+                <div class="form-group">
+                    <label for="message">Menssagem</label>
+                    <textarea class="form-control" id="message" rows="10" cols="65" name="message"></textarea>
+                </div>
+                <div class="container-button">
                     <div class="buttons">
                         <button type="submit">Enviar</button>
                         <button type="reset">Limpar</button>
                     </div>
+                </div>
                 </fieldset>
             </form>
-        </div>
+        </section>
 
     </main>
 
@@ -99,10 +132,10 @@
             <li><span>Redes Sociais</span>
                 <ul class="d-flex justify-content-center">
                     <li><a class="image-link" href="http://instragram.com/citec" target="_blank"
-                            rel="noopener noreferrer"><img src="../assets/icons8-instagram-48.png"
+                            rel="noopener noreferrer"><img src="../assets/icons8-instagram-32.png"
                                 alt="ícone do instagram"></a></li>
                     <li><a class="image-link" href="http://facebook.com/citec" target="_blank"
-                            rel="noopener noreferrer"><img src="../assets/icons8-facebook-novo-48.png"
+                            rel="noopener noreferrer"><img src="../assets/icons8-facebook-novo-32.png"
                                 alt="ícone do Facebook"></a></li>
                 </ul>
             </li>
