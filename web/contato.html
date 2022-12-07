@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preload" href="../css/style.css" as="style">
-        <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" as="style">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" type="text/css"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-        <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
-        <title>Agenda</title>
-      </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="../css/style.css" as="style">
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" as="style">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+    <title>Agenda</title>
+</head>
 
 <body>
     <!-- ============== Header e Menu ============== -->
@@ -47,9 +47,7 @@
 
             <h2>Contato</h2>
 
-            <form id="form-contato" class="
-             border-dark border p-5
-              ">
+            <form id="form-contato" class="border-dark border p-5">
                 <div class="form-group row">
                     <label for="name" class="col-sm-2 col-form-label">Nome:</label>
                     <div class="col-sm-10">
@@ -71,48 +69,46 @@
                 <div class="form-group row">
                     <label for="date" class="col-sm-2 col-form-label">Data nascimento:</label>
                     <div class="col-sm-10">
-                        <input type="date" class="form-control" id="date" placeholder="email@email.com.br">
+                        <input type="date" class="form-control" id="date">
                     </div>
                 </div>
                 <fieldset class="form-group">
                     <div class="row">
-                        <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+                        <label class="col-form-label col-sm-2 pt-0">Sexo</label>
                         <div class="col-sm-10">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sex" id="gridRadios1"
-                                    value="masculino" checked>
-                                <label class="form-check-label" for="gridRadios1">
+                                <input class="form-check-input" type="radio" name="sex" id="masculino" value="masculino"
+                                    checked>
+                                <label class="form-check-label" for="masculino">
                                     Masculino
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sex" id="gridRadios1"
-                                    value="feminino" checked>
-                                <label class="form-check-label" for="gridRadios1">
+                                <input class="form-check-input" type="radio" name="sex" id="feminino" value="feminino"
+                                    checked>
+                                <label class="form-check-label" for="feminino">
                                     Feminino
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="sex" id="gridRadios1"
+                                <input class="form-check-input" type="radio" name="sex" id="nao-informado"
                                     value="nao-informado" checked>
-                                <label class="form-check-label" for="gridRadios1">
+                                <label class="form-check-label" for="nao-informado">
                                     Prefiro não informar
                                 </label>
                             </div>
                         </div>
                     </div>
-                </fieldset>
-
-                <div class="form-group">
-                    <label for="message">Menssagem</label>
-                    <textarea class="form-control" id="message" rows="10" cols="65" name="message"></textarea>
-                </div>
-                <div class="container-button">
-                    <div class="buttons">
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Limpar</button>
+                    <div class="form-group">
+                        <label for="message">Menssagem</label>
+                        <textarea class="form-control" id="message" rows="10" cols="65" name="message"></textarea>
                     </div>
-                </div>
+                    <div class="container-button">
+                        <div class="buttons">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpar</button>
+                        </div>
+                    </div>
                 </fieldset>
             </form>
         </section>
